@@ -15,8 +15,9 @@ Play with a friend and see who wins — `X` or `O`!
 
 ---
 
-## 🖥️ Demo
-Live link: 
+## 🖥️ Live Demo
+👉 [Click here to play the game](https://sheefaaa.github.io/Tic-Tac-Toe-Game/)
+
 
 ---
 
