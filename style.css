@@ -46,7 +46,6 @@ body {
     font-weight: bold;
     background-color: #fff;
     color: #521b4a;
-    cursor: pointer;
     transition: transform 0.2s, background-color 0.3s;
 }
 
@@ -57,7 +56,6 @@ body {
 
 .box:disabled {
     opacity: 0.8;
-    cursor: not-allowed;
 }
 
 /* Buttons */
@@ -108,3 +106,4 @@ body {
 .hide {
     display: none;
 }
+
