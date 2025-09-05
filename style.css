@@ -1,0 +1,110 @@
+/* Reset + Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #AB6884, #521b4a);
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Container */
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+/* Game Grid */
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    font-size: 8vmin;
+    font-weight: bold;
+    background-color: #fff;
+    color: #521b4a;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.box:hover:not(:disabled) {
+    background-color: #f4e4ec;
+    transform: scale(1.05);
+}
+
+.box:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+/* Buttons */
+#reset-btn,
+.new-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background: #521b4a;
+    color: #fff;
+    cursor: pointer;
+    margin: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+}
+
+#reset-btn:hover,
+.new-btn:hover {
+    background: #6d2f60;
+    transform: translateY(-3px);
+}
+
+#reset-btn:active,
+.new-btn:active {
+    transform: translateY(0);
+}
+
+/* Message */
+.msg {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.msgContainer {
+    margin: 1rem auto;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: fit-content;
+}
+
+.hide {
+    display: none;
+}
